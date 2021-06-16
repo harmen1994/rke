@@ -99,6 +99,9 @@ rke_s3_bucket:
 # @var rke_s3_folder:description: Backup S3 folder
 rke_s3_folder:
 
+# @var rke_etcd_backup:description: Flag to disable s3 backup
+rke_etcd_backup: True
+
 # @var rke_etcd_config:description: Etcd configuration
 rke_etcd_config:
 

@@ -33,6 +33,7 @@ Building and improving this Ansible role have been sponsored by my employer **Pr
   * [rke_copy_kubeconfig](#rke_copy_kubeconfig)
   * [rke_dns_config](#rke_dns_config)
   * [rke_etcd_config](#rke_etcd_config)
+  * [rke_etcd_backup](#rke_etcd_backup)
   * [rke_external_domain](#rke_external_domain)
   * [rke_force_update](#rke_force_update)
   * [rke_images_config](#rke_images_config)
@@ -318,6 +319,10 @@ rke_dns_config:
 ### rke_etcd_config
 
 Scheduler configuration
+
+### rke_etcd_backup
+
+Possibility to disable S3 backup
 
 #### Default value
 
