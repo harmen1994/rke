@@ -111,9 +111,6 @@ addons_include:
 {% endif %}
 
 addons: |-
-{% if not rke_addons_config is string and rke_addons_config is iterable %}
-{{ rke_addons_config | to_nice_yaml(indent=2) | trim }}
-{% else %}
-{{ rke_addons_config | from_yaml | to_nice_yaml(indent=2) | trim }}
-{% endif %}
+{% if rke_addons_config %}
+{{ rke_addons_config }}
 {% endif %}
