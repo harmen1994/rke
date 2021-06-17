@@ -112,5 +112,5 @@ addons_include:
 
 addons: |-
 {% if rke_addons_config %}
-{{ rke_addons_config | to_nice_yaml | indent(2) }}
+{{ rke_addons_config | indent(2) }}
 {% endif %}
